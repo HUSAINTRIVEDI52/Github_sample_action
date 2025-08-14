@@ -1,0 +1,1 @@
+Welcomd to the sample github actions setup.
