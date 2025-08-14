@@ -1,1 +1,1 @@
-Welcomd to the sample github actions setup.
+Welcomd to the sample github actions setup
