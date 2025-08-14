@@ -4,9 +4,19 @@ on:
        branches:
            - master
            - test
+    pull_request : #Event whenever a pull request is made to the repository
+        branches:
+            - master
+
 jobs:
     on-push: #job name
         runs-on: ubuntu-latest
         steps: #Steps to be executed in the job
-            - name: "Running on Master Push" #step 1
-              run : echo "Running on master Push"
+            - name: "Running on Master/test Push" #step 1
+              run : echo "Running on master/test Push"
+
+    on-pull-request: #Job name
+        runs-on: ubuntu-latest
+        steps: #steps to be executed in the job
+            - name: "Running on the pull request" #Step 2
+              run: echo "Running on the pull request"
